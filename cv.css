@@ -1,0 +1,142 @@
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+@font-face {
+    font-family: bio;
+    src: url("BioRhyme-Regular.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F6F5F3;
+    font-family: bio;
+    font-size: 17px;
+}
+
+nav {
+    font-family: arial;
+    width: 100%;
+    height: 75px;
+    align-content: center;
+    list-style: none;
+    position: absolute;
+    margin-right: 155px;
+    background-color: #161618;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+nav #links {
+    margin-top: 2%;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+nav a {
+    font-size: 17px;
+    color: #779199;
+    text-decoration: none;
+    transition: color 1s, font-size 1s;
+}
+
+nav a:hover {
+    color: #F6F5F3;
+    font-size: 27px;
+}
+
+#overgang {
+    width: 100%;
+    height: 80px;
+}
+
+#txt {
+    position: relative;
+    color: #23262B;
+    opacity: 0.9;
+    text-align: center;
+}
+
+h1 {
+    width: 275px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1:hover {
+    border-radius: 25px 25px 25px 25px;
+    background-color: #23262B;
+    color: #F6F5F3;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contprog {
+    width: 50%;
+    height: 22px;
+    background-color: #779199;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.contprog .progress {
+    height: 100%;
+    background-color: #23262B;
+    border-radius: 25px 25px 25px 25px;
+    color: #F6F5F3;
+    text-align: left;
+}
+
+.contprog .progress .txt {
+    transform: translate(0px, -2px);
+}
+
+#pers {
+    display: inline;
+}
+
+#container {
+    box-sizing: content-box;
+    height: 335px;
+    width: 517px;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 150px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 15px #888888;
+    background-image: url("images/hackathon.png");
+    background-size: contain;
+}
+
+.active {
+    color: #F6F5F3;
+    font-size: 27px;
+}
+
+.nonactive {
+    font-size: 17px;
+    color: #779199;
+    text-decoration: none;
+}
